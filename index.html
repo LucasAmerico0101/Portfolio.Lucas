@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Lucas Americo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/4631a5dc40.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/357431346_1309234949978584_3947972743462156358_n.jpg" alt="" class="icon-perfil">
+        <nav>
+            <ul class="menu">
+                <li><a href="#" class="scroll-to" data-target="general">Home</a></li>
+                <li><a href="#" class="scroll-to" data-target="card-about">Sobre</a></li>
+                <li><a href="#" class="scroll-to" data-target="card-projetos">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="general">
+        <div class="container">
+            <h1>Lucas Americo da Silva</h1>
+            <h2>Desenvolvedor Web & Python</h2>
+            <p>Olá me chamo Lucas e tenho 18 anos, é um prazer recebe-lo no meu portfolio Aproveite!</p>
+        </div>
+        <div class="card-projetos">
+            <h2>Projetos</h2>
+                <h3>RPG.PY <i class="fa-solid fa-dragon"></i></h3>
+                <p>Eu fiz um rpg em texto muito legal feito em python,ainda só esta no modo texto mas logo logo estara em uma interface grafica.</p>
+                <h3>CRUD.PY <i class="fa-solid fa-database"></i></h3>
+                <p>Um crud feito em python e mysql, onde eu fiz um sistema de cadastro,delete e consulta de usuarios presentes em um banco de dados</p>
+                <h3>CONTRIBUITE THIS PROJECT <i class="fa-solid fa-paint-roller"></i></h3>
+                <p>Um projeto onde eu contribui, onde voce faz seu card em html e css para se apresentar</p>
+        </div>
+        <div class="card-about">
+            <h2>Sobre</h2>
+            <p>Eu sou um jovem de 18 anos, que gosta de programar e de inovar</p>
+            <p>Eu estou estudando para me tornar um desenvolvedor web back-end</p>
+            <p>Para me conhecer mais acesse as redes abaixo</p>
+            <ul>
+                <li><a href="https://github.com/LucasAmerico0101"><i class="fa-brands fa-github-alt"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-am%C3%A9rico-da-silva-69b53a1b7/"><i class="fa-brands fa-linkedin"></i></a>
+                <li><a href="https://www.instagram.com/lucas_americo2023/"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Lucas Americo. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="https://github.com/LucasAmerico0101"><i class="fa-brands fa-github-alt"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/lucas-am%C3%A9rico-da-silva-69b53a1b7/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/lucas_americo2023/"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script>
+        document.querySelectorAll('.scroll-to').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetClass = this.getAttribute('data-target');
+                const targetElement = document.querySelector(`.${targetClass}`);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

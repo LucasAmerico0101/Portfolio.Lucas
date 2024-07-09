@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:#D7D9D9;
+}
+header{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.icon-perfil{
+    border-radius: 30px;
+    width: 80px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color:#1D2F40;
+    border-radius: 30px;
+}
+.menu a{
+    text-decoration: none;
+    color: #D7D9D9;
+    font-size: larger;
+    font-weight: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.menu li{
+    list-style: none;
+}
+.general{
+    text-align: center;
+    font-family: Poppins,sans-serif;
+    word-wrap: break-word;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+}
+.general h2 h3 p{
+    padding: 10px;
+    margin: 10px;
+}
+.card-projetos{
+    text-align: center;
+    font-family: Poppins,sans-serif;
+    word-wrap: break-word;
+    padding: 10px;
+    margin: 10px;
+    background-color:#496373;
+    border-radius: 30px;
+}
+.card-about{
+    text-align: center;
+    font-family: Poppins,sans-serif;
+    word-wrap: break-word;
+    padding: 10px;
+    margin: 10px;
+    background-color:#496373;
+    border-radius: 30px;
+}
+.card-about li{
+    list-style: none;
+    display: inline;
+}
+.card-about i {
+    color: #D7D9D9;
+    font-size: 30px;
+    width: 50px;
+}
+nav a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: black;
+    transition: width 0.3s ease;
+}
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+    background: white;
+}
+nav a:hover{
+    color: white;
+}
+footer {
+    background-color: #1D2F40;
+    color: #D7D9D9;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+    font-family: Poppins sans-serif;
+}
+
+footer a {
+    color: #D7D9D9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
