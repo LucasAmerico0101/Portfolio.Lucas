@@ -1,122 +1,63 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    background-color:#D7D9D9;
-}
-header{
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-}
-.icon-perfil{
-    border-radius: 30px;
-    width: 80px;
-}
-.menu{
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 56px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    background-color:#1D2F40;
-    border-radius: 30px;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.menu a{
-    text-decoration: none;
-    color: #D7D9D9;
-    font-size: larger;
-    font-weight: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.header {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?coding,night') no-repeat center center/cover;
     position: relative;
-}
-.menu li{
-    list-style: none;
-}
-.general{
-    text-align: center;
-    font-family: Poppins,sans-serif;
-    word-wrap: break-word;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 30px;
-}
-.general h2 h3 p{
-    padding: 10px;
-    margin: 10px;
-}
-.card-projetos{
-    text-align: center;
-    font-family: Poppins,sans-serif;
-    word-wrap: break-word;
-    padding: 10px;
-    margin: 10px;
-    background-color:#496373;
-    border-radius: 30px;
-}
-.card-about{
-    text-align: center;
-    font-family: Poppins,sans-serif;
-    word-wrap: break-word;
-    padding: 10px;
-    margin: 10px;
-    background-color:#496373;
-    border-radius: 30px;
-}
-.card-about li{
-    list-style: none;
-    display: inline;
-}
-.card-about i {
-    color: #D7D9D9;
-    font-size: 30px;
-    width: 50px;
-}
-nav a::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: black;
-    transition: width 0.3s ease;
-}
-nav a:hover::after {
-    width: 100%;
-    left: 0;
-    background: white;
-}
-nav a:hover{
     color: white;
 }
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+    background-color: #162447 !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.nav-link:hover {
+    color: #1f4068 !important;
+}
+
+.flex-fill {
+    flex: 1 0 auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.card {
+    background-color: #1f4068;
+    border: none;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #1b1b2f;
+}
+
 footer {
-    background-color: #1D2F40;
-    color: #D7D9D9;
-    text-align: center;
-    padding: 20px;
-    border-radius: 30px;
-    margin: 10px;
-    font-family: Poppins sans-serif;
-}
-
-footer a {
-    color: #D7D9D9;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 10px;
+    background-color: #162447;
+    flex-shrink: 0;
+    width: 100%;
 }

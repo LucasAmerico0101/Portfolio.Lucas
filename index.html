@@ -1,71 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-Lucas Americo</title>
+    <title>Lucas Americo - Portfólio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/4631a5dc40.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="img/357431346_1309234949978584_3947972743462156358_n.jpg" alt="" class="icon-perfil">
-        <nav>
-            <ul class="menu">
-                <li><a href="#" class="scroll-to" data-target="general">Home</a></li>
-                <li><a href="#" class="scroll-to" data-target="card-about">Sobre</a></li>
-                <li><a href="#" class="scroll-to" data-target="card-projetos">Projetos</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Lucas Americo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre Mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contributions">Contribuições</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contato</a>
+                </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+            <div class="text-white">
+                <h1 class="display-4" data-aos="fade-down">Olá, eu sou Lucas Americo</h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">Desenvolvedor Web Back-End</p>
+            </div>
+        </div>
     </header>
-    <section class="general">
-        <div class="container">
-            <h1>Lucas Americo da Silva</h1>
-            <h2>Desenvolvedor Web & Python</h2>
-            <p>Olá me chamo Lucas e tenho 18 anos, é um prazer recebe-lo no meu portfolio Aproveite!</p>
-        </div>
-        <div class="card-projetos">
-            <h2>Projetos</h2>
-                <h3>RPG.PY <i class="fa-solid fa-dragon"></i></h3>
-                <p>Eu fiz um rpg em texto muito legal feito em python,ainda só esta no modo texto mas logo logo estara em uma interface grafica.</p>
-                <h3>CRUD.PY <i class="fa-solid fa-database"></i></h3>
-                <p>Um crud feito em python e mysql, onde eu fiz um sistema de cadastro,delete e consulta de usuarios presentes em um banco de dados</p>
-                <h3>CONTRIBUITE THIS PROJECT <i class="fa-solid fa-paint-roller"></i></h3>
-                <p>Um projeto onde eu contribui, onde voce faz seu card em html e css para se apresentar</p>
-        </div>
-        <div class="card-about">
-            <h2>Sobre</h2>
-            <p>Eu sou um jovem de 18 anos, que gosta de programar e de inovar</p>
-            <p>Eu estou estudando para me tornar um desenvolvedor web back-end</p>
-            <p>Para me conhecer mais acesse as redes abaixo</p>
-            <ul>
-                <li><a href="https://github.com/LucasAmerico0101"><i class="fa-brands fa-github-alt"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/lucas-am%C3%A9rico-da-silva-69b53a1b7/"><i class="fa-brands fa-linkedin"></i></a>
-                <li><a href="https://www.instagram.com/lucas_americo2023/"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </div>
+
+    <section id="about" class="container my-5" data-aos="fade-right">
+        <h2>Sobre Mim</h2>
+        <p>Meu nome é Lucas, tenho 18 anos e estudo Desenvolvimento de Sistemas na ETEC. Sou apaixonado por tecnologia e programação, com habilidades em HTML, CSS, Python, JavaScript e PHP.</p>
+    </section>
+
+    <section id="projects" class="container my-5">
+        <h2>Projetos</h2>
+        <div class="row">
+            <div class="col-md-6" data-aos="zoom-in">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto CRUD em Python</h5>
+                        <p class="card-text">Um sistema completo de CRUD desenvolvido em Python.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">RPG de Texto em Python</h5>
+                        <p class="card-text">Um RPG de texto interativo desenvolvido em Python.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
+
+    <section id="contributions" class="container my-5" data-aos="fade-left">
+        <h2>Contribuições</h2>
+        <p>Contribui para um projeto colaborativo onde desenvolvedores podem compartilhar e melhorar códigos juntos.</p>
+    </section>
+
+    <section id="contact" class="container my-5" data-aos="fade-up">
+        <h2>Contato</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Seu Nome">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Sua Mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <p class="mt-3">Ou envie um email para <a href="mailto:lucasamerico695@gmail.com">lucasamerico695@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/LucasAmerico0101" target="_blank">LucasAmerico0101</a></p>
+    </section>
+
+    <footer class="text-center py-4 bg-dark text-white">
         <p>&copy; 2024 Lucas Americo. Todos os direitos reservados.</p>
-        <ul>
-            <li><a href="https://github.com/LucasAmerico0101"><i class="fa-brands fa-github-alt"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/lucas-am%C3%A9rico-da-silva-69b53a1b7/"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/lucas_americo2023/"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        document.querySelectorAll('.scroll-to').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetClass = this.getAttribute('data-target');
-                const targetElement = document.querySelector(`.${targetClass}`);
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
+        AOS.init();
     </script>
 </body>
 </html>
